@@ -25,7 +25,32 @@ When the condition becomes false, program control passes to the line immediately
 Here, key point of the while loop is that the loop might not ever run. When the condition is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed.
 
 ## Examples :
+// C++ Program to compute factorial of a number
 
-_will be added later_
+#include<iostream>
+   
+using namespace std;
+
+int main() 
+
+{
+    int number, i = 1, factorial = 1;
+
+    cout << "Enter a positive integer: ";
+    cin >> number;
+    
+    while ( i <= number) {
+        factorial *= i;      //factorial = factorial * i;
+        ++i;
+    }
+
+    cout<<"Factorial of "<< number <<" = "<< factorial;
+    return 0;
+}
+
+//Output
+
+Enter a positive integer: 4
+Factorial of 4 = 24
 
 **Cheers :beers:**
